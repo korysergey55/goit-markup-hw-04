@@ -1,0 +1,327 @@
+
+/* При такой кстановке изначально border-box, а у остальный наследуется content-tepe который нужен элементу
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}*/
+
+/*Основной цвет текста #212121*/
+/*Вторичный цвет текста #757575 */
+/*Фоновый цвет #FFFFFF */
+/*Акцент #2196F3*/
+/*Банер + футер #2F303A*/
+/* Сетка 1170*37 */
+
+/* ====================== Наследование =============================*/
+:root{
+    --text-color: #212121;
+    --secindary-text-color: #757575;
+    --bg-color:#FFFFFF; 
+    --akcent-color: #2196F3;
+    --baner-color:#2F303A;
+}
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+ul,ol{list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img{display: block;}
+/* ====================== Components ================================*/
+.logo{
+    display: block;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--akcent-color);
+    text-decoration: none;
+}
+.logo-black{
+    color:#000000;
+}
+.logo-footer{
+    color:#FFFFFF;
+}
+.navi-list .link.current{
+    color: var(--akcent-color);
+}
+.section{
+    margin:auto;
+    padding-top: 95px;
+    padding-bottom: 95px;
+    outline: 2px solid tomato;
+}
+.container{
+    margin: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+/* ====================== HEADER =====================================*/
+.navi .logo{
+    margin-right: 93px;
+    padding-top:25px ;
+    padding-bottom:25px;
+}
+.navi-list .link{
+    display:block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.header-contact .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secindary-text-color);
+    text-decoration: none; 
+}
+.navi-list .link:hover,
+.navi-list .link:focus,
+.header-contact .link:hover,
+.header-contact .link:focus{
+    color: var(--akcent-color);
+}
+/* ====================== HEADER-Container =====================================*/
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.navi{
+    display: flex;
+    justify-content:center;
+    margin:0;
+}
+.navi-list{
+    display: flex;
+    justify-content:center;
+    margin-right: 331px;
+}
+.header-contact {
+    display: flex;
+    justify-content:flex-end;
+    margin:0;
+}
+.navi-list .item:not(:last-child){
+    margin-right: 50px;
+}
+.header-contact .item:not(:last-child){
+    margin-right: 50px;
+}
+/* ====================== HERO ==============================================*/ 
+.hero{
+    background-color: var(--baner-color);
+    text-align: center;
+}
+.hero-title{
+    margin:0;
+    padding-top:200px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    min width: 696px;
+}
+.main-button {
+    margin-top: 30px;
+    margin-bottom:200px ;
+    min-width: 200px;
+    padding: 10px 32px;
+    border-radius: 4px;
+    border:transparent;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    text-decoration: none;
+}
+.main-button:hover,
+.main-button:focus{
+    color:#FFFFFF;
+    background-color: #2196F3;
+}
+/* ====================== FEATURES ===========================================*/ 
+.features-list .title{
+    margin: 0;
+} 
+.features-list .text{
+    margin-top:10px;
+    margin-bottom: 0;
+    
+    line-height: 1.71;
+    color: var(--secindary-text-color);
+}
+.container .features-list {
+    display: flex;
+    justify-content: space-around;
+}
+.features-list .item:not(:last-child){
+    margin-right: 30px;
+}
+/* ====================== SPECIALIZATION ===========================================*/
+.section.specialization{
+    padding-top:0;
+}
+.specialization .title{
+    margin-bottom: 50px;
+    margin-top: 0;
+        
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--text-color);
+}
+.specialization-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .specialization-list .item:not(:last-child){
+     margin-right: 30px;
+ }
+/* ====================== TEAM ===========================================*/ 
+.title-team  {
+    margin-top: 0;
+    margin-bottom: 50px;
+        
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--text-color);
+ }
+.team-list .title{
+    margin-top:30px;
+    margin-bottom:10px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    color: var(--text-color);
+}
+.team-list .text{
+    margin-bottom:0;
+    margin-top: 0;
+    
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    color: var(--secindary-text-color);
+}
+.container .team-list{
+    display: flex;
+    justify-content: space-around;
+}
+.team-list{
+    background-color: #F5F4FA;
+}
+/* ====================== fOOTER ==========================================*/ 
+.footer{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: var(--baner-color);
+}
+.footer .contact{
+    line-height: 1.71;
+    color:rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: block;
+}
+.footer .address{
+    line-height: 1.71;
+    color:#FFFFFF;
+    text-decoration: none;
+
+    margin-bottom: 10px;
+    display: block;
+}
+.contact:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-list .contact+.footer-list .contact{
+    margin-bottom: 60px;
+}
+/* ====================== Partfolio ========================================*/ 
+.button {
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--text-color);
+        border: none;    
+}      
+.button:hover,
+.button:focus{
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 5%;
+}
+.partfolio-list a{
+    text-decoration: none;
+}
+.partfolio-list .title{
+    margin-top: 20px;
+    margin-bottom: 4px;
+    
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--text-color);
+}
+.partfolio-list .text{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--secindary-text-color);
+}
+/* ====================== Partfolio container =========================*/
+.partfolio-title{
+    display: none;
+}
+.button-list{
+    display: flex;
+    justify-content: center;
+}
+.partfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.partfolio-list .item{
+margin-right: 30px;
+}
+.partfolio-list .item:nth-child(3n){
+margin-right: 0px;
+}
