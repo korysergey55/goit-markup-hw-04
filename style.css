@@ -146,9 +146,6 @@ img{display: block;}
 .header-contact .link.tel::before{
     background-image: url(./imeges/header/tel.svg);
 }
-.header-contact .link:hover::before{
-    color: var(--akcent-color);
-}
 /* ====================== HERO ==============================================*/ 
 .hero.overlay{
     margin-left: auto;
@@ -196,7 +193,7 @@ img{display: block;}
 .hero .main-button:hover,
 .hero .main-button:focus{
     color: #FFFFFF;
-    background-color:var(--akcegnt-color);
+    cursor: pointer;
 }
 /* ====================== FEATURES ===========================================*/ 
 .container .features-list {
@@ -207,6 +204,7 @@ img{display: block;}
     margin-right: 30px;
 }
 .features-list .title{
+    text-transform: uppercase;
     margin: 0;
 } 
 .features-list .title::before{
@@ -315,10 +313,8 @@ img{display: block;}
     justify-content: center;
     align-items:center;
     margin:auto;
-
     width: 44px;
     height: 44px;
-    background-image: url("./imeges/team/instagram.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -354,16 +350,11 @@ img{display: block;}
     width:100%;
     height:100%;
 
-    background-image: url("./imeges/clients/logo1.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 /* ======================fOOTER=========================================*/ 
-.footer .container{
-    display: flex;
-    justify-content: start;
-}
 .footer{
     padding-bottom: 60px;
     padding-top: 60px;
@@ -389,6 +380,10 @@ img{display: block;}
     margin-bottom: 9px;
 }
 
+.footer .container{
+    display: flex;
+    justify-content: start;
+}
 .footer-social-title{
 padding-left: 70px;
 font-family: Roboto;
@@ -403,6 +398,10 @@ color: #FFFFFF;
 .footer-social-list{
     display: flex;
     justify-content: space-between;
+    padding-left: 70px;
+}
+.footer-social-link{
+    display: block;
 }
 /* ======================Partfolio=======================================*/ 
 .button {
