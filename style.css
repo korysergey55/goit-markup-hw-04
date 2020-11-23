@@ -112,10 +112,10 @@ img{display: block;}
     margin:0;
 }
 .header-contact .item:not(:last-child){
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .header-contact .link{
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -129,22 +129,12 @@ img{display: block;}
 .header-contact .link:focus{
     color: var(--akcent-color);
 }
-.header-contact .link::before{
-    display:inline-block;
-    justify-content:start;
-    align-items:center;
-    content: "";
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-      
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url(./imeges/header/mail.svg);
+.icon-header{
+    fill: var(--secindary-text-color);
 }
-.header-contact .link.tel::before{
-    background-image: url(./imeges/header/tel.svg);
+.icon-header:hover,
+.icon-header:focus{
+    fill: var(--akcent-color);
 }
 /* ====================== HERO ==============================================*/ 
 .hero.overlay{
@@ -299,7 +289,7 @@ img{display: block;}
     height: 44px;
 }
 .social-link{
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -313,12 +303,13 @@ img{display: block;}
     justify-content: center;
     align-items:center;
     margin:auto;
-    width: 44px;
-    height: 44px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    fill: black;
+    width: 20px;
+    height: 20px;
+    fill:#AFB1B8;
+}
+.social-logo:hover,
+.social-logo:hover{
+    fill:white;
 }
 /* ====================== Clients ==========================================*/
 .title-clients{
@@ -360,32 +351,34 @@ img{display: block;}
     padding-top: 60px;
     background-color: var(--baner-color);
 }
-.footer .address{
-    font-style: normal;
-    line-height: 1.71;
-    color:#FFFFFF;
-    text-decoration: none;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    display: block;
-}
-.footer .contact{
-    font-style: normal;
-    line-height: 1.71;
-    color:rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    display: block;
-}
-.contact:not(:last-child) {
-    margin-bottom: 9px;
-}
-
 .footer .container{
     display: flex;
     justify-content: start;
 }
+.footer .address{
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    font-style: normal;
+    line-height: 1.71;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+.footer .contact{
+    display: block;
+    font-style: normal;
+    line-height: 1.71;
+    color:rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.contact:not(:last-child) {
+    margin-bottom: 9px;
+}
 .footer-social-title{
 padding-left: 70px;
+margin-bottom: 20px;
+
 font-family: Roboto;
 font-style: normal;
 font-weight: bold;
@@ -398,11 +391,31 @@ color: #FFFFFF;
 .footer-social-list{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 70px;
 }
 .footer-social-link{
-    display: block;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 10px;
+    
+    width: 44px;
+    height: 44px;
+    fill: #FFFFFF;
+    background-color: var(--secindary-text-color);
+    border-radius: 50%;
 }
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--akcent-color);
+}
+
+
+
+
+
+
 /* ======================Partfolio=======================================*/ 
 .button {
         margin-right: 8px;
