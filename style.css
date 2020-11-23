@@ -141,7 +141,7 @@ img{display: block;}
     margin-right: auto;
     padding-bottom: 95px;
 
-    width:1600px;
+    width:;
     height: 600px;
     background-image: url(./imeges/hero/Img-overlay.png), url(./imeges/hero/img-hero-optimize.jpg);
     background-repeat: no-repeat;
@@ -251,6 +251,7 @@ img{display: block;}
 .title-team{
     margin-top: 0;
     margin-bottom: 50px;
+
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
@@ -264,6 +265,7 @@ img{display: block;}
  .team-list .title{
     margin-top:30px;
     margin-bottom:10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.9;
@@ -273,6 +275,7 @@ img{display: block;}
 .team-list .text{
     margin-bottom:0;
     margin-top: 0;
+
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
@@ -284,11 +287,13 @@ img{display: block;}
     justify-content: center;
     align-items: center;
     margin: auto;
+
     width: 206px;
     height: 44px;
 }
 .social-link{
     display: flex;
+
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -302,6 +307,7 @@ img{display: block;}
     justify-content: center;
     align-items:center;
     margin:auto;
+
     width: 20px;
     height: 20px;
     fill:#AFB1B8;
@@ -329,6 +335,7 @@ img{display: block;}
 }
 .link-clients-logo{
     display: flex;
+
     width: 170px;
     height: 90px;
     border:  1px solid #AFB1B8;
@@ -342,6 +349,7 @@ img{display: block;}
     display: flex;
     justify-content: space-around;
     margin: auto;
+
     width: 50%;
     height: 50%;
     background-size: contain;
@@ -426,10 +434,17 @@ color: #FFFFFF;
 
 
 /* ======================Partfolio=======================================*/ 
+.partfolio-title{
+    display: none;
+}
+.partfolio-list a{
+    text-decoration: none;
+}
 .button {
         margin-right: 8px;
         padding-right: 22px;
         padding-left: 22px;
+
         font-family: inherit;
         font-weight: 500;
         font-size: 16px;
@@ -445,12 +460,10 @@ color: #FFFFFF;
     background-color: #2196F3;
     border-radius: 5%;
 }
-.partfolio-list a{
-    text-decoration: none;
-}
 .partfolio-list .title{
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 4px;
+    margin-left: 24px;
     
     font-weight: bold;
     font-size: 18px;
@@ -459,18 +472,18 @@ color: #FFFFFF;
     color: var(--text-color);
 }
 .partfolio-list .text{
-    padding-top: 0;
-    padding-bottom: 20px;
-    margin: 0;
+    display: block;
+    margin-top: 4px;
+    margin-bottom:0;
+    margin-left: 24px;
+
     font-size: 16px;
     text-align: start;
     line-height: 1.9;
     color: var(--secindary-text-color);
 }
 /* ====================== Partfolio container =========================*/
-.partfolio-title{
-    display: none;
-}
+
 .button-list{
     display: flex;
     justify-content: center;
@@ -482,6 +495,7 @@ color: #FFFFFF;
 }
 .partfolio-list .item{
     margin-right: 30px;
+    margin-bottom: 30px;
     border: 1px solid #EEEEEE;
 }
 .partfolio-list .item:nth-child(3n+3){
