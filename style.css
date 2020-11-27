@@ -508,6 +508,7 @@ img{display: block;}
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-bottom:30px;
 
     width: 206px;
     height: 44px;
