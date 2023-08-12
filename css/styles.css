@@ -63,6 +63,7 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   }
+  
   .icon{
     fill: rgb(6, 6, 6);
     stroke:rgb(6, 6, 6) ;
