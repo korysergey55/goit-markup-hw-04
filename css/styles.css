@@ -455,8 +455,8 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   color:var(--hover-color);
 }
 .customers .link:focus{
-  border-color:var(--hover-color);
-  color:var(--hover-color);
+  border-color:#404bbf;
+  color:#404bbf;
 }
 
  .customers .item .link .icon{
@@ -618,10 +618,10 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
- .card:hover .overlay{
+ .card .link:hover .overlay{
   transform: translateY(0%);
 }
-.card:focus .overlay{
+.card .link:focus .overlay{
   transform: translateY(0%);
 }
 .card-wripper{
