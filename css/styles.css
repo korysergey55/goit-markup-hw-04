@@ -450,13 +450,9 @@ rgba(46, 47, 66, 0.7)),url(../images/hero.jpg);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customers .link:hover{
+.customers .link:hover,.customers .link:focus{
   color:var(--hover-color);
   border-color:var(--hover-color);
-}
-.customers .link:focus{
-  color:#404bbf;
-  border-color:#404bbf;
 }
 
  .customers .item .link .icon{
